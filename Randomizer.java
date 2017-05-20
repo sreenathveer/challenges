@@ -12,7 +12,6 @@ public class Randomizer extends Random{
 	      size = n;
 	    }
 
-	    //Set set = new LinkedHashSet();
 	    PriorityQueue<Integer> queue=new PriorityQueue<Integer>();  
 
 	    for (int i = 0; i < size; i++) {
@@ -20,7 +19,6 @@ public class Randomizer extends Random{
 	        Integer value = new Integer(nextInt(n));
 
 	        if (!queue.contains(value)) {
-	          //set.add(value);
 	          queue.add(value);
 	          break;
 	        }
